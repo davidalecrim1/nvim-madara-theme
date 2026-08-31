@@ -21,7 +21,7 @@ function M.load()
   vim.g.terminal_color_5 = c.magenta
   vim.g.terminal_color_6 = c.cyan
   vim.g.terminal_color_7 = c.white
-  vim.g.terminal_color_8 = c.terminal_black
+  vim.g.terminal_color_8 = c.dark3
   vim.g.terminal_color_9 = c.red
   vim.g.terminal_color_10 = c.green
   vim.g.terminal_color_11 = c.yellow

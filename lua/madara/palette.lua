@@ -29,8 +29,6 @@ return {
   cyan = "#50b8c8",
   white = "#c8cede",
 
-  terminal_black = "#303242",
-
   blue1 = "#82aaff",
   blue2 = "#65bcff",
   blue5 = "#89ddff",
