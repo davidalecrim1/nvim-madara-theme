@@ -238,6 +238,9 @@ function M.get()
     SnacksPickerInputBorder = { fg = c.orange, bg = c.bg_float },
     SnacksPickerInputTitle = { fg = c.orange, bg = c.bg_float },
     SnacksPickerBoxTitle = { fg = c.orange, bg = c.bg_float },
+    -- staged files in the explorer/pickers otherwise fall back to
+    -- DiagnosticHint (a muted grey here); staged should read as green
+    SnacksPickerGitStatusStaged = { fg = c.green },
 
     -- terminal colors
     Terminal = { fg = c.fg_dark, bg = c.bg },
