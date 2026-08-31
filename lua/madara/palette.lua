@@ -13,7 +13,7 @@ return {
   fg_dark = "#c8cede",
   fg_gutter = "#4a5070",
 
-  border = "#222334",
+  border = "#7a8098",
   border_highlight = "#82aaff",
 
   comment = "#636da6",
