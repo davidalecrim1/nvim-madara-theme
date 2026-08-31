@@ -9,6 +9,10 @@ function M.get()
     Normal = { fg = c.fg, bg = c.bg },
     NormalFloat = { fg = c.fg, bg = c.bg_float },
     NormalNC = { fg = c.fg, bg = c.bg },
+    -- snacks.nvim remaps its windows' Normal to these; without them it falls
+    -- back to NormalFloat, making the explorer bg differ from buffers.
+    SnacksNormal = { fg = c.fg, bg = c.bg },
+    SnacksNormalNC = { fg = c.fg, bg = c.bg },
     FloatBorder = { fg = c.border, bg = c.bg_float },
     FloatTitle = { fg = c.blue1, bg = c.bg_float },
     ColorColumn = { bg = c.bg_highlight },
@@ -226,6 +230,10 @@ function M.get()
     SnacksDashboardFooter = { fg = c.comment, italic = true },
     SnacksPickerBorder = { fg = c.border, bg = c.bg_float },
     SnacksPickerTitle = { fg = c.bg, bg = c.blue1 },
+    -- the list pane (used by the explorer sidebar too) defaults to
+    -- NormalFloat via snacks' own fallback chain, which differs from
+    -- the regular buffer bg; pin it so explorer/pickers match buffers
+    SnacksPickerList = { fg = c.fg, bg = c.bg },
     -- Explorer header: input float border title (same groups as tokyonight)
     SnacksPickerInputBorder = { fg = c.orange, bg = c.bg_float },
     SnacksPickerInputTitle = { fg = c.orange, bg = c.bg_float },
