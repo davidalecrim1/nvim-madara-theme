@@ -103,10 +103,10 @@ function M.get()
     DiagnosticVirtualTextInfo = { fg = c.info, bg = c.bg },
     DiagnosticVirtualTextHint = { fg = c.hint, bg = c.bg },
 
-    DiffAdd = { fg = c.git_add, bg = c.bg },
-    DiffChange = { fg = c.git_change, bg = c.bg },
-    DiffDelete = { fg = c.git_delete, bg = c.bg },
-    DiffText = { fg = c.blue1, bg = c.bg },
+    DiffAdd = { bg = c.diff_add },
+    DiffChange = { bg = c.diff_change },
+    DiffDelete = { bg = c.diff_delete },
+    DiffText = { bg = c.blue7 },
 
     -- Treesitter
     ["@variable"] = { fg = c.variable },

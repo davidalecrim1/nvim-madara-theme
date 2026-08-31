@@ -44,6 +44,11 @@ return {
   git_change = "#ffc777",
   git_delete = "#ff757f",
 
+  -- git_add/change/delete blended 25% into bg, for full-line diff backgrounds
+  diff_add = "#414b3d",
+  diff_change = "#504337",
+  diff_delete = "#502f39",
+
   error = "#c53b53",
   warning = "#ffc777",
   info = "#0db9d7",
