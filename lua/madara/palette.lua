@@ -1,5 +1,5 @@
 -- Colors ported 1:1 from the Zed "Madara" theme (madara-theme/themes/madara.json)
-return {
+local defaults = {
   bg = "#161722",
   bg_dark = "#12131c",
   bg_highlight = "#1a1b26",
@@ -59,3 +59,25 @@ return {
   type = "#65bcff",
   builtin = "#589ed7",
 }
+
+local M = {}
+for k, v in pairs(defaults) do
+  M[k] = v
+end
+
+-- Restores every field to its default value.
+function M.reset()
+  for k, v in pairs(defaults) do
+    M[k] = v
+  end
+end
+
+-- Applies per-field overrides on top of the current values, for variants
+-- (e.g. madara-grey) that only tweak a couple of colors.
+function M.override(overrides)
+  for k, v in pairs(overrides or {}) do
+    M[k] = v
+  end
+end
+
+return M

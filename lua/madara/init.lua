@@ -2,12 +2,16 @@ local c = require("madara.palette")
 
 local M = {}
 
-function M.load()
+function M.load(opts)
+  opts = opts or {}
+  c.reset()
+  c.override(opts.overrides)
+
   if vim.g.colors_name then
     vim.cmd("hi clear")
   end
   vim.o.termguicolors = true
-  vim.g.colors_name = "madara"
+  vim.g.colors_name = opts.name or "madara"
 
   for group, hl in pairs(require("madara.highlights").get()) do
     vim.api.nvim_set_hl(0, group, hl)
