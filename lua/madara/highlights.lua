@@ -226,6 +226,10 @@ function M.get()
     SnacksDashboardFooter = { fg = c.comment, italic = true },
     SnacksPickerBorder = { fg = c.border, bg = c.bg_float },
     SnacksPickerTitle = { fg = c.bg, bg = c.blue1 },
+    -- Explorer header: input float border title (same groups as tokyonight)
+    SnacksPickerInputBorder = { fg = c.orange, bg = c.bg_float },
+    SnacksPickerInputTitle = { fg = c.orange, bg = c.bg_float },
+    SnacksPickerBoxTitle = { fg = c.orange, bg = c.bg_float },
 
     -- terminal colors
     Terminal = { fg = c.fg_dark, bg = c.bg },
