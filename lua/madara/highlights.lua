@@ -112,6 +112,12 @@ function M.get()
     DiffDelete = { bg = c.diff_delete },
     DiffText = { bg = c.blue7 },
 
+    -- Snacks' diff previewer (git diff, PR review) links unchanged context
+    -- lines to DiffChange by default, which tints every context line with
+    -- the same strong background meant for actually-changed lines
+    SnacksDiffContext = { bg = c.bg },
+    SnacksDiffContextLineNr = { fg = c.fg_gutter, bg = c.bg },
+
     -- Treesitter
     ["@variable"] = { fg = c.variable },
     ["@variable.builtin"] = { fg = c.git_delete },
